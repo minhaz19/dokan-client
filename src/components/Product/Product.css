@@ -1,0 +1,30 @@
+.product-container{
+    border: 1px solid white;
+    box-shadow: 5px 5px 20px rgb(187, 183, 183);
+    border-radius: 10px;
+    margin: 20px;
+    padding:20px;
+    text-align:center;
+    height: 300px;
+    width: 300px;
+    background-color: white;
+}
+.product-container img {
+    width: 50%;
+    height: 50%;
+}
+.search-btn{
+    background: tomato;
+    border: 1px solid tomato;
+    margin: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+}
+.search-btn:hover{
+    cursor: pointer;
+}
+.checkoutButton{
+    float: right;
+}

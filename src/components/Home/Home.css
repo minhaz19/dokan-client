@@ -1,0 +1,10 @@
+.product-style{
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content: center;
+}
+.centered{
+    top:50%;
+    left: 50%;
+}
