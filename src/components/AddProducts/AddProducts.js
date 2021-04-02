@@ -14,7 +14,7 @@ const AddProducts = () => {
             price: data.price,
             imageURL : imageURL
         }
-        const url = 'http://localhost:5000/addProduct';
+        const url = 'https://serene-retreat-69880.herokuapp.com/addProduct';
         fetch(url,{
             method: "POST",
             headers :{

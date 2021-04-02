@@ -11,7 +11,7 @@ const CheckOut = () => {
 
     const [productDetail, setProductDetail] = useState([]);
     useEffect(()=>{
-        const url = `http://localhost:5000/products/${id}`;
+        const url = `https://serene-retreat-69880.herokuapp.com/products/${id}`;
         fetch(url)
         .then(res => res.json())
         .then(data => setProductDetail(data))
@@ -19,7 +19,7 @@ const CheckOut = () => {
 
     const handleSubmit =() =>{
       const orderDetails = {...loggedInUser, product:productDetail, orderTime: new Date() }
-      fetch('http://localhost:5000/checkout',{
+      fetch('https://serene-retreat-69880.herokuapp.com/checkout',{
         method:"POST",
       headers:{
         'content-type': "application/json"

@@ -10,13 +10,13 @@ const ManageProduct = () => {
     const [productDelete, setProductDelete] = useState([]);
     
     useEffect(() =>{
-        fetch('http://localhost:5000/products')
+        fetch('https://serene-retreat-69880.herokuapp.com/products')
         .then(res =>res.json())
         .then(data => setProducts(data))
     },[])
 
     const handleDelete = (id) =>{
-        fetch(`http://localhost:5000/delete/${id}`,{
+        fetch(`https://serene-retreat-69880.herokuapp.com/delete/${id}`,{
             method:'DELETE'
         })
         .then(res =>res.json())

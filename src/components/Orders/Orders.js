@@ -8,7 +8,7 @@ import './Orders.css';
 const Orders = () => {
     const [orders, setOrders] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/orders')
+        fetch('https://serene-retreat-69880.herokuapp.com/orders')
             .then(res => res.json())
             .then(data => setOrders(data))
     }, [])

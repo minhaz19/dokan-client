@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
 const Home = () => {
     const [products, setProducts] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/products')
+        fetch('https://serene-retreat-69880.herokuapp.com/products')
             .then(res => res.json())
             .then(data => setProducts(data))
     }, [])
@@ -30,7 +30,7 @@ const Home = () => {
                 </div>
             }
             {
-                products.map(pd => <Product product={pd}></Product>)
+                products.map(pd => <Product key={pd._id} product={pd}></Product>)
             }
         </div>
     );
